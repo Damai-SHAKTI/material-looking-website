@@ -1,0 +1,590 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: .4s ease;
+}
+/* Variables */
+:root {
+    --bg-color-white:#fff;
+    --bg-color-black:#000;
+    --text-color-white:#fff;
+    --text-color-black:#000;
+}
+/* Variables End*/
+
+/* Smooth Behaviour */
+html {
+    scroll-behavior: smooth;
+}
+/* Smooth Behaviour End */
+
+/* Top onScroll ProgressBar */
+.progress-bar {
+    background: #0a57d1;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    height: 5px;
+    z-index: 1;
+}
+/* Top onScroll ProgressBar End*/
+
+/* Custom Scrollbar */
+body::-webkit-scrollbar {
+    width: 1em;
+}
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.02);
+    background: var(--bg-color-white);
+} 
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+    border-radius: 5px;
+}
+body::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 40%);
+}
+/* Custom Scrollbar End */
+
+/* Div Container */
+.container {
+    background: var(--bg-color-white);
+}
+/* Div Container End */
+
+/* Header Logo/text */
+.header .logo {
+    float: left;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 80px;
+    margin-left: 100px;
+}
+.header .logo a {
+    color: var(--text-color-black);
+    text-decoration: none;
+}
+#text-coding{
+    color: #0099ff;
+}
+/* Header Logo/text End */
+
+/* Header And Navigation Bar */
+.header {
+    top: 0;
+    width: 100%;
+    position: sticky;
+    position: -webkit-sticky; /* For Safari Browser*/
+    background: var(--bg-color-white);
+    box-shadow: 0px 10px 20px grey;
+    z-index: 1;
+}
+.header:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+.header ul {
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+.header ul li {
+    border-top: 2px solid var(--bg-color-white);
+    display: inline-block;
+    margin: 0 2px;
+    z-index: 1;
+}
+.header ul li:hover {
+    border-top: 2px solid #1788cf;
+}
+.header ul li a {
+    color: var(--text-color-black);
+    border: 2px solid var(--bg-color-white);
+    border-radius: 6px;
+    line-height: 80px;
+    font-size: 20px;
+    padding: 8px 15px;
+    text-decoration: none;
+}
+.header ul li a:hover {
+    border: 2px solid #1788cf;
+}
+.header ul ul {
+    top: 90px;
+    opacity: 0;
+    position: absolute;
+    border: 2px solid #1788cf;
+    background: var(--bg-color-white);
+    visibility: hidden;
+    transition: top .3s;
+}
+.header ul li:hover > ul {
+    top: 82px;
+    opacity: 1;
+    visibility: visible;    
+    z-index: 1;
+}
+.header ul ul li {
+    position: relative;
+    margin: 0px;
+    width: 140px;
+    float: none;
+    display: list-item;
+    text-align: center;
+    background: var(--bg-color-white);
+}
+.header ul ul li:hover {
+    padding: 2px;
+    border: 2px solid #1788cf;
+}
+.header ul ul li a {
+    color: var(--text-color-black);
+    line-height: 50px;
+}
+/* Header And Navigation Bar End */
+
+.div-welcome {
+    width: 100%;
+    background: var(--bg-color-white);
+    display: inline-block;
+}
+.img-dev {
+    width: 55%;
+    border-radius: 50%;
+    padding-top: 28px;
+}
+
+.text-container {
+    float: right;
+    color: var(--text-color-black);
+    font-weight: bold;
+    font-size: 45px;
+    margin-right: 180px;
+    margin-top: 200px;
+}
+.text-container > .text{
+    font-weight: normal;
+    font-size: 30px;
+}
+
+/* Curve svg */
+.curve {
+    background: #0099ff;
+}
+.curve > svg {
+    display: block;
+}
+.curve h1 {
+    color: var(--text-color-white);
+    font-size: 60px;
+    text-align: center;
+}
+.curve h3 {
+    color: var(--text-color-white);
+    font-size: 30px;
+    text-align: center;
+    font-weight: normal;
+}
+/* Curve svg End */
+
+/* Steps */
+.steps {
+    background: #89b2f0
+}
+.steps .grid-items {
+    display: grid;
+    padding: 60px 0px 60px 0px;
+    align-items: center;
+    grid-template-columns: repeat(3, 33%);
+}
+.steps .grid-items div {
+    text-align: center;
+    justify-content: center;
+}
+
+.steps .grid-items .circle-area h1 {
+    width: 50px;
+    height: 50px;
+    padding: 30px;
+    border: none;
+    font-size: 40px;
+    border-radius: 50%;
+    text-align: center;
+    background: #6fa3f7;
+    box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.75);
+}
+.steps .grid-items h3 {
+    margin: 0% 18% 0% 18%; 
+}
+/* Steps End */
+
+.passion {
+    width: 100%;
+    padding: 80px 0px 80px 0px;
+    display: inline-block;
+    background: var(--bg-color-white);
+}
+.passion span img {
+    width: 60%;
+}
+.passion span h1{
+    float: right;
+    font-size: 35px;
+    color: var(--text-color-black);
+    margin: 200px 30px 0px 0px;
+}
+
+/* Card View */
+.card-languages {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--bg-color-white);
+    justify-content: center;   
+}
+.cardview {
+    max-width: 300px;
+    margin: 15px;
+    color: var(--text-color-black);
+    text-align: center;
+    border-radius: 10px;
+    background: var(--bg-color-white);
+    box-shadow: 0px 0px 10px grey;
+}
+.card-languages .cardview h2 {
+    padding: 5px 0px 5px 0px;
+}
+.card-languages .cardview h4 {
+    margin-top: 5px;
+}
+.card-languages .cardview p {
+    margin: 0px 10px 0px 10px;
+    padding: 20px 0px 20px 0px;
+}
+/* Card View End */
+
+/* Get Started Button */
+@keyframes animate{
+    0% { background-position: 0%; }
+    100% { background-position: 400%; }
+}
+.getstarted {
+    background: var(--bg-color-white);
+}
+.getstarted button {
+    border: none;
+    outline: none;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 40px;
+    margin: 40px 0px 60px 0px;
+    padding: 20px 50px 20px 50px;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+}
+.getstarted button:hover {
+    animation: animate 8s linear infinite;
+}
+/* Get Started Button End */
+
+/* Footer */
+.footer { 
+    background: #f1f1f1;
+    padding: 90px 0;
+} 
+.footer-container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}  
+.social-media {
+    margin: 20px 0;
+}
+.social-media a {
+    color: var(--text-color-black);
+    margin-right: 25px;
+    font-size: 22px;
+    text-decoration: none;
+    transition: .3s linear;
+} 
+.social-media a:hover {
+    color: #0099ff;
+}
+.right-col h1 {
+    font-size: 26px;
+    color: var(--text-color-black);
+}
+.right-col p {
+    margin: 10px 0px 10px 0px;
+    color: var(--text-color-black);
+}
+.border {
+    width: 100px;
+    height: 4px;
+    background: #0099ff;
+}
+.footer .footer-container .left-col .logo {
+    color: #000;
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+}
+.footer .footer-container .left-col .logo a {
+    color: var(--text-color-black);
+    text-decoration: none;
+}
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.txtb {
+    flex: 1;
+    padding: 18px 40px;
+    font-size: 16px;
+    color: #293043;
+    background: #ddd;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    min-width: 260px;
+}
+.btn {
+    padding: 18px 40px;
+    font-size: 16px;
+    color: var(--text-color-black);
+    background: #0099ff;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: opacity .3s linear;
+} 
+.rights-text {
+    color: var(--text-color-black);
+}
+.btn:hover {
+    opacity: .7;
+}
+.page-content {
+    min-height: 100vh;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Footer End */
+
+/* Languages Tutorial */
+.left-side-scrollbar {
+    width: 12%;
+    height: 90%;
+    margin-top: 10px;
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-align: center;
+    background: var(--bg-color-white);
+}
+.left-side-scrollbar h2 {
+    padding: 10px;
+    color: var(--text-color-black);
+}
+.left-side-scrollbar a {
+    display: block;
+    text-decoration: none;
+    color: var(--text-color-black);
+    padding: 5px 0px 5px 0px;
+}
+/* Languages Tutorial End */
+
+/* Html Tutorial Page*/
+.tutorialplaceholder {
+    border:2px solid red;
+    margin-top: 20px;
+    margin-left: 12%;
+}
+.tutorialplaceholder div h1 {
+    padding: 20px 0px 20px 0px;
+}
+.tutorialplaceholder .btn-nav {
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-size: 25px;
+    background: #0099ff;
+    margin-bottom: 10px;
+}
+.tutorialplaceholder #btn-previous {
+    float: left;
+}
+.tutorialplaceholder #btn-next {
+    float: right;
+    margin-right: 20px;
+}
+.tutorialplaceholder div p {
+    padding: 10px 0px 10px 0px;
+}
+/* Html Tutorial Page End */
+
+/* Floating Theme Changer Button */
+#btn-theme {
+    right: 20px;
+    bottom: 20px;
+    float: right;
+    padding: 20px;
+    outline: none;
+    border: none;
+    position: fixed;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 50px;
+    transition-duration: .5s;
+    -webkit-box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 12px 3px rgba(0,0,0,0.75);
+}
+#btn-theme:hover {
+    transform: scale(1.1);
+}
+#btn-theme img {
+    width: 40px;
+}
+/* Floating Theme Changer Button End */
+
+/* Back To Top */
+#btn-to-top-arrow {
+    left: 50%;
+    bottom: 15px;
+    display: none;
+    text-align: center;
+    background: #fff;
+    margin-left: -30px;
+    min-width: 60px;
+    outline: none;
+    border: none;
+    position: fixed;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px grey;
+    z-index: 1;
+    transition-duration: .5s;
+}
+#btn-to-top-arrow:hover {
+    transform: scale(1.1);
+}
+#img-to-top-arrow {
+    width: 30px;
+}
+/* Back To Top End */
+
+/* About Page */
+.aboutContainer {
+    padding: 20px 0px 20px 0px;
+    background: var(--bg-color-white);
+}
+.aboutContainer .about {
+    height: 80vh;
+    text-align: center;
+    border-radius: 10px;
+    margin: 14px 20% 14px 20%;
+    box-shadow: 0px 0px 10px grey;
+}
+.aboutContainer .about .text-mission, .text-about {
+    color: var(--text-color-black);
+    font-size: 35px;
+    padding: 20px 0px 20px 0px;
+}
+.aboutContainer .about .goal {
+    font-size: 20px;
+    color: var(--text-color-black);
+}
+.aboutContainer .about .des {
+    margin: 0% 15% 5% 15%;
+    color: var(--text-color-black);
+    font-size: 22px;
+}
+/* About Page End */
+
+/* Contact Page */
+.ContactContainer {
+    padding: 20px 0px 20px 0px;
+    background: var(--bg-color-white);
+}
+.ContactContainer .contact {
+    height: 80vh;
+    text-align: center;
+    border-radius: 10px;
+    margin: 14px 20% 14px 20%;
+    box-shadow: 0px 0px 10px grey;
+}
+.ContactContainer .contact .text-contactus {
+    font-size: 35px;
+    color: var(--text-color-black);
+    padding: 25px 0px 25px 0px;
+}
+.ContactContainer .contact input {
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid var(--bg-color-white);
+    font-size: 20px;
+    background: var(--bg-color-white);
+    box-shadow: 0px 0px 5px grey;
+}
+.ContactContainer .contact input::placeholder, textarea::placeholder {
+    font-size: 20px;
+    color: var(--text-color-black);
+}
+.ContactContainer .contact input:focus {
+    border: 1px solid #0099ff;
+}
+.ContactContainer .contact textarea {
+    width: 80%;
+    height: 220px;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+    outline: none;
+    font-size: 20px;
+    border: 1px solid var(--bg-color-white);
+    background: var(--bg-color-white);
+    box-shadow: 0px 0px 5px grey;
+}
+.ContactContainer .contact textarea:focus {
+    border: 1px solid #0099ff;
+}
+.ContactContainer .contact input, textarea,[contenteditable] {
+  color: var(--text-color-black);
+  caret-color: var(--text-color-black);
+}
+.ContactContainer .contact #btn-sendemail {
+    padding: 20px 40px 20px 40px;
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    transition: opacity .3s linear;
+    background: #0099ff;
+}
+.ContactContainer .contact #btn-sendemail:hover {
+    opacity: .7;
+}
+/* Contact Page End */

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Us page of FreeCoding">
+    <meta name="keywords" content="FreeCoding, Freecoding Contact Us, FreeCoding contact us">
+    <meta name="author" content="DAMAI SHAKTI">
+    <meta name="theme-color" content="#fff" />
+    <link rel="icon" href="./pictures/favicon-icon.jpg" type="image/gif">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- Credits: https://michalsnik.github.io/aos/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href=".\css\style.css">
+    <script type="text/javascript" src=".\script\script.js"></script>
+    <title>FreeCoding | Contact Us</title>
+</head>
+<noscript>Sorry, either your browser doesn't support javascript or you had disable it. You need javascript to use this website.</noscript>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo"><a href="index.html">Free<span id="text-coding">Coding</span></a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#">Languages</a>
+                    <ul>
+                        <li><a href="#">Python</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                        <li><a href="#">Java</a></li>
+                        <li><a href="html.html">Html</a></li>
+                        <li><a href="#">C++</a></li>
+                        <li><a href="#">C#</a></li>
+                        <li><a href="#">Php</a></li>
+                    </ul>
+                </li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="About.html">About Us</a></li>
+            </ul>
+        </div>
+        <div class="progress-bar" id="myBar"></div>
+
+        <div class="ContactContainer">
+            <div class="contact" data-aos="fade-up" data-aos-duration="1500"> 
+                <p class="text-contactus">Contact Us</p>
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Your Message"></textarea>
+                <center>
+                    <button id="btn-sendemail">Send Email</button>
+                </center>
+            </div>
+        </div>
+
+        <div id="footer" class="footer">
+            <div class="footer-container">
+                <div class="left-col">
+                  <div class="logo"><a href="index.html">Free<span id="text-coding">Coding</span></a></div><br/><br/>
+                  <div class="social-media">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://hk.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                  <p class="rights-text">© 2020 Created By Damai Shakti | All Rights Reserved.</p>
+                </div>
+        
+                <div class="right-col">
+                  <h1>Our Newsletter</h1>
+                  <div class="border"></div>
+                  <p>Enter Your Email to get our news and updates.</p>
+                  <form action="" class="newsletter-form">
+                    <input type="text" class="txtb" placeholder="Enter Your Email">
+                    <input type="submit" class="btn" value="submit">
+                  </form>
+                </div>
+              </div>
+        </div>
+        <div>
+            <button id="btn-to-top-arrow" onclick="GoToTop()">
+                <img id="img-to-top-arrow" src=".\pictures\arrow-to-top.png"/>
+            </button>
+        </div>
+        <div>
+            <button id="btn-theme" onclick="ToggleTheme(true)">
+                <img id="img-theme" src=".\pictures\moon.png" alt="Light/Dark image"/>
+            </button>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
