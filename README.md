@@ -6,7 +6,7 @@ Note that it's only made for ```desktop``` and not for ```phones```.
 - https://lucid-ardinghelli-bc4178.netlify.app/
 
 ### Credits:
-For scroll animation: https://michalsnik.github.io/aos/ <br/>
+Animate On Scroll Library: https://michalsnik.github.io/aos/ <br/>
 Images: 
 - https://www.codecademy.com/
 - https://undraw.co/illustrations
