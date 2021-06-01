@@ -1,2 +1,2 @@
 # material-looking-website
-A simple desktop home page
+A simple material looking website
